@@ -13,8 +13,7 @@ class GenericsMockTest {
 
     @Test
     void testMockGenericQueue() {
-        @SuppressWarnings("unchecked")
-        IQueue<String> queue = Mockito.mock(IQueue.class);
+        IQueue<String> queue = Mockito.mock();
 
         // Use the mock in your tests
         Mockito.when(queue.dequeue()).thenReturn("TestItem");
