@@ -13,7 +13,7 @@ class GenericsMockTest {
 
     @Test
     void testMockGenericQueue() {
-        IQueue<String> queue = Mockito.mock();
+        IQueue<String> queue = Mockito.mock(IQueue.class);
 
         // Use the mock in your tests
         Mockito.when(queue.dequeue()).thenReturn("TestItem");
